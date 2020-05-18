@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Котейка</title>
+    <link rel="stylesheet" href="css/libs.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header__block">
+            <div class="header__fixed">
+                <div class="container">
+                    <div class="header__wrap">
+                        <a href="javascript:;" class="header__wrap_logo">
+                            <img src="img/logo.svg" alt="">
+                        </a>
+                        <nav class="header__wrap_menu">
+                            <a href="javascript:;" class="header__wrap_menu-link">Почему мы?</a>
+                            <a href="javascript:;" class="header__wrap_menu-link">Номера</a>
+                            <a href="javascript:;" class="header__wrap_menu-link">Отзывы</a>
+                            <a href="javascript:;" class="header__wrap_menu-link">Как нас найти</a>
+                        </nav>
+
+                        <div class="header__wrap_burger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section product">
+        <div class="container">
+            <div class="section__title">
+                <h2>Наши номера</h2>
+
+                <div class="product__sort">
+                    <div class="product__sort_item product__sort_item--current product__sort_item--up">
+                        По площади
+                    </div>
+                    <div class="product__sort_dropdown">
+                        <div class="product__sort_item product__sort_item--down">
+                            По площади
+                        </div>
+                        <div class="product__sort_item product__sort_item--up">
+                            По цене
+                        </div>
+                        <div class="product__sort_item product__sort_item--down">
+                            По цене
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+                
+            <div class="product__wrap">
+                <div class="product__wrap_sidebar">
+                    <form class="filter filter--sidebar">
+                        <div class="filter__block">
+                            <p class="filter__block_name">Цена за сутки, ₽</p>
+                            <div class="filter__block_row">
+                                <label class="filter__block_label">
+                                    <input type="text" class="filter__block_input" placeholder="От">
+                                </label>
+                                <label class="filter__block_label">
+                                    <input type="text" class="filter__block_input" placeholder="До">
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="filter__block">
+                            <p class="filter__block_name">Площадь</p>
+
+                            <label class="filter__block_label">
+                                <input type="checkbox" name="s" class="filter__block_checkbox">
+                                <div class="filter__block_text">0,63 м2</div>
+                            </label>
+
+                            <label class="filter__block_label">
+                                <input type="checkbox" name="s" class="filter__block_checkbox">
+                                <div class="filter__block_text">0,90 м2</div>
+                            </label>
+
+                            <label class="filter__block_label">
+                                <input type="checkbox" name="s" class="filter__block_checkbox">
+                                <div class="filter__block_text">1,13 м2</div>
+                            </label>
+
+                            <label class="filter__block_label">
+                                <input type="checkbox" name="s" class="filter__block_checkbox">
+                                <div class="filter__block_text">1,56 м2</div>
+                            </label>
+
+                            <label class="filter__block_label">
+                                <input type="checkbox" name="s" class="filter__block_checkbox">
+                                <div class="filter__block_text">2,56 м2</div>
+                            </label>
+
+                            <label class="filter__block_label">
+                                <input type="checkbox" name="s" class="filter__block_checkbox">
+                                <div class="filter__block_text">2,56 м2</div>
+                            </label>
+                        </div>
+
+                        <div class="filter__block">
+                            <p class="filter__block_name">Оснащение номера</p>
+
+                            <label class="filter__block_label">
+                                <input type="checkbox" name="s" class="filter__block_checkbox">
+                                <div class="filter__block_text">Пустой номер</div>
+                            </label>
+
+                            <label class="filter__block_label">
+                                <input type="checkbox" name="s" class="filter__block_checkbox">
+                                <div class="filter__block_text">Лежак</div>
+                            </label>
+
+                            <label class="filter__block_label">
+                                <input type="checkbox" name="s" class="filter__block_checkbox">
+                                <div class="filter__block_text">Когтеточка</div>
+                            </label>
+
+                            <label class="filter__block_label">
+                                <input type="checkbox" name="s" class="filter__block_checkbox">
+                                <div class="filter__block_text">Игровой-комплекс</div>
+                            </label>
+
+                            <label class="filter__block_label">
+                                <input type="checkbox" name="s" class="filter__block_checkbox">
+                                <div class="filter__block_text">Домик</div>
+                            </label>
+
+                            
+                        </div>
+
+                        <button class="filter__button filter__button--submit" type="submit">Применить</button>
+                        <button class="filter__button filter__button--reset" type="reset">Сбросить</button>
+                    </form>
+                </div>
+
+                <div class="product__wrap_content">
+                    <div class="product__item">
+                        <div class="product__item_img">
+                            <img src="img/item1.jpg" alt="">
+                        </div>
+                        <div class="product__item_content">
+                            <h3 class="product__item_title">Эконом</h3>
+
+                            <div class="product__item_text">
+                                Размеры (ШхГхВ) - 90х70х180 см
+                            </div>
+
+                            <div class="product__item_text">
+                                Площадь - 0,63 м2
+                            </div>
+
+                            <div class="product__item_text">
+                                Оснащение номера
+                                <div class="equip">
+                                    <img src="img/icons/equipment-none.svg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="product__item_text">
+                                Цена за сутки: <span class="price">100₽</span>
+                            </div>
+
+                            <button class="product__item_button">Забронировать</button>
+
+                        </div>
+
+                        
+                    </div>
+
+                    <div class="product__item">
+                        <div class="product__item_img">
+                            <img src="img/item2.jpg" alt="">
+                        </div>
+                        <div class="product__item_content">
+                            <h3 class="product__item_title">Эконом плюс</h3>
+
+                            <div class="product__item_text">
+                                Размеры (ШхГхВ) - 90х100х180 см
+                            </div>
+
+                            <div class="product__item_text">
+                                Площадь - 0,90 м2
+                            </div>
+
+                            <div class="product__item_text">
+                                Оснащение номера
+                                <div class="equip">
+                                    <img src="img/icons/equipment-1.svg" alt="">
+                                    <img src="img/icons/equipment-2.svg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="product__item_text">
+                                Цена за сутки: <span class="price">200₽</span>
+                            </div>
+                            
+                            <button class="product__item_button">Забронировать</button>
+
+                        </div>
+
+                        
+                    </div>
+
+                    <div class="product__item">
+                        <div class="product__item_img">
+                            <img src="img/item3.jpg" alt="">
+                        </div>
+                        <div class="product__item_content">
+                            <h3 class="product__item_title">Комфорт</h3>
+
+                            <div class="product__item_text">
+                                Размеры (ШхГхВ) - 100х125х180 см
+                            </div>
+
+                            <div class="product__item_text">
+                                Площадь - 1,13 м2
+                            </div>
+
+                            <div class="product__item_text">
+                                Оснащение номера
+                                <div class="equip">
+                                    <img src="img/icons/equipment-1.svg" alt="">
+                                    <img src="img/icons/equipment-2.svg" alt="">
+                                    <img src="img/icons/equipment-3.svg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="product__item_text">
+                                Цена за сутки: <span class="price">250₽</span>
+                            </div>
+                            
+                            <button class="product__item_button">Забронировать</button>
+
+                        </div>
+
+                        
+                    </div>
+
+                    <div class="product__item">
+                        <div class="product__item_img">
+                            <img src="img/item4.jpg" alt="">
+                        </div>
+                        <div class="product__item_content">
+                            <h3 class="product__item_title">Сьют</h3>
+
+                            <div class="product__item_text">
+                                Размеры (ШхГхВ) - 125х125х180 см
+                            </div>
+
+                            <div class="product__item_text">
+                                Площадь - 1,56 м2
+                            </div>
+
+                            <div class="product__item_text">
+                                Оснащение номера
+                                <div class="equip">
+                                    <img src="img/icons/equipment-1.svg" alt="">
+                                    <img src="img/icons/equipment-2.svg" alt="">
+                                    <img src="img/icons/equipment-3.svg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="product__item_text">
+                                Цена за сутки: <span class="price">350₽</span>
+                            </div>
+                            
+                            <button class="product__item_button">Забронировать</button>
+
+                        </div>
+
+                        
+                    </div>
+
+                    <div class="product__item">
+                        <div class="product__item_img">
+                            <img src="img/item5.jpg" alt="">
+                        </div>
+                        <div class="product__item_content">
+                            <h3 class="product__item_title">Люкс</h3>
+
+                            <div class="product__item_text">
+                                Размеры (ШхГхВ) - 160х160х180 см
+                            </div>
+
+                            <div class="product__item_text">
+                                Площадь - 2,56 м2
+                            </div>
+
+                            <div class="product__item_text">
+                                Оснащение номера
+                                <div class="equip">
+                                    <img src="img/icons/equipment-1.svg" alt="">
+                                    <img src="img/icons/equipment-2.svg" alt="">
+                                    <img src="img/icons/equipment-3.svg" alt="">
+                                    <img src="img/icons/equipment-4.svg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="product__item_text">
+                                Цена за сутки: <span class="price">500₽</span>
+                            </div>
+                            
+                            <button class="product__item_button">Забронировать</button>
+
+                        </div>
+
+                        
+                    </div>
+
+                    <div class="product__item">
+                        <div class="product__item_img">
+                            <img src="img/item6.jpg" alt="">
+                        </div>
+                        <div class="product__item_content">
+                            <h3 class="product__item_title">Супер-Люкс</h3>
+
+                            <div class="product__item_text">
+                                Размеры (ШхГхВ) - 180х160х180 см
+                            </div>
+
+                            <div class="product__item_text">
+                                Площадь - 2,88 м2
+                            </div>
+
+                            <div class="product__item_text">
+                                Оснащение номера
+                                <div class="equip">
+                                    <img src="img/icons/equipment-1.svg" alt="">
+                                    <img src="img/icons/equipment-2.svg" alt="">
+                                    <img src="img/icons/equipment-3.svg" alt="">
+                                    <img src="img/icons/equipment-4.svg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="product__item_text">
+                                Цена за сутки: <span class="price">600₽</span>
+                            </div>
+                            
+                            <button class="product__item_button">Забронировать</button>
+
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <script src="js/libs.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/product.js"></script>
+    
+</body>
+</html>

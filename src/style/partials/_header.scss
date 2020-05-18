@@ -1,0 +1,130 @@
+.header {
+
+    &__block {
+        height: 76px;
+    }
+
+    &__fixed {
+        background-color: $white;
+        &.active {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            border-bottom: 1px solid $grey;
+            z-index: 5;
+            animation: headerSlideIn 0.5s ease-out;
+        }
+    }
+    
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 0;
+    }
+
+    &__wrap_logo {
+        height: 52px;
+    }
+
+    &__wrap_menu {
+        color: $text;
+    }
+
+    &__wrap_menu-link {
+        font-weight: 600;
+        margin-left: 30px;
+        position: relative;
+
+        &:after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background-color: $orange;
+            transition: 0.2s;
+        }
+
+        &:hover {
+            &:after {
+                width: 100%;
+                left: 0;
+            }
+        }
+    }
+
+    &__wrap_burger {
+        display: none;
+        position: relative;
+        width: 24px;
+        height: 18px;
+
+        span {
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: $orange;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            transition: 0.2s;
+
+            &:nth-of-type(1) {
+                top: auto;
+            }
+
+            &:nth-of-type(2) {
+                opacity: 1;
+            }
+
+            &:nth-last-of-type(1) {
+                bottom: auto;
+            }
+        }
+
+        &.active {
+            span {
+                &:nth-of-type(1) {
+                    transform: rotate(45deg);
+                    top: 0;
+                }
+                &:nth-of-type(2) {
+                    opacity: 0;
+                }
+                &:nth-last-of-type(1) {
+                    transform: rotate(-45deg);
+                    bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        &__wrap_menu {
+            display: none;
+            padding: 35px 15px;
+            position: fixed;
+            top: 76px;
+            left: 0;
+            background-color: $white;
+            height: calc(100vh - 76px);
+            width: 100%;
+            z-index: 5;
+        }
+
+        &__wrap_menu-link {
+            display: block;
+            margin: 0 0 24px;
+        }
+
+        &__wrap_burger {
+            display: block;
+        }
+    }
+}
